@@ -1,0 +1,110 @@
+.root {
+	height: 100%;
+	background-size: 100% auto;
+}
+
+.wheelbase {
+	position: relative;
+	margin: 0 auto;
+	.placeholder {
+		 width: 100%;
+	}
+
+	.wheel {
+		width: 100%;
+		position: absolute;
+		top: 0;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+		z-index: 10;
+	}
+
+	.needle {
+		width: fixpx(193);
+		height: fixpx(223);
+		cursor: pointer;
+		position: absolute;
+		z-index: 11;
+		top: 50%;
+		left: 50%;
+		margin-left: fixpx(193/-2);
+		margin-top: fixpx(243/-2);
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.prizeitem {
+	transform-origin:center bottom;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+}
+
+.prizedivide {
+	width: 1px;
+	height: fixpx(640/2);
+	transform: rotate(72deg);
+	transform-origin:center bottom;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.rule {
+	width: fixpx(120);
+	height: fixpx(120);
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.music {
+	height: fixpx(80);
+	width: fixpx(80);
+	position: absolute;
+	left: 0.75rem;
+	top: 1rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 20;
+}
+
+.musicOn {
+	background-image: url(./musicOn.png);
+}
+
+.musicOff {
+	background-image: url(./musicOff.png);
+}
+
+.info {
+	padding-top: 2rem;
+	text-align: center;
+	color: #fff;
+	line-height: 2rem;
+	text-shadow: 2px 0px 0px red, -2px 0px 0px red, 0px 2px 0px red, 0px -2px 0px red;
+
+	span {
+		padding: 0 0.5rem;
+		color: yellow;
+		font-size: 1rem;
+	}
+}

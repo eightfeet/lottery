@@ -1,0 +1,71 @@
+@keyframes animatRoll {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.title1 {
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+	padding-bottom:3rem;
+}
+.title2 {
+	color: yellow;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.prizebox {
+	width: 100%;
+	position: relative;
+	margin-top: 5rem;
+}
+.roll {
+	position: absolute;
+	width: fixpx(516);
+	height: fixpx(516);
+	left: 50%;
+	margin-left: fixpx(-516/2);
+
+	animation:animatRoll 6s infinite linear ;
+	img {
+		width: 100%
+	}
+}
+.prize {
+	position: relative;
+	z-index: 50;
+	height: fixpx(350);
+	width: fixpx(350);
+	margin: 0 auto;
+	text-align: center;
+
+	img {
+		max-width: 80%;
+	}
+
+	&:after {
+		vertical-align: middle
+	}
+}
+
+.leve {
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.fail {
+	text-align: center;
+	padding-top: 3rem;
+	img {
+		width: 100%;
+	}
+}
